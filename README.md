@@ -1,3 +1,5 @@
+![](http://res.cloudinary.com/jollen/image/upload/h_110/v1455862763/devify-logo_rh63vl.png)
+
 # devify-cli
 
 [![Build Status](https://travis-ci.org/DevifyPlatform/devify-cli.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-cli)
