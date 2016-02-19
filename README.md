@@ -26,5 +26,45 @@ cd my_project && npm install
 
 Start the server
 ```
-devify esp8266
+node esp8266-coap-server.js
 ```
+
+By default, the IoT server is listening at ```coap://localhost:8000``` to accept CoAP requests. Please use an IP address to listen from requests. Use ```HOST``` environment to achieve this.
+
+```
+$ export HOST=192.168.0.100
+$ node esp8266-coap-server.js 
+WoT.City/CoAP server is listening at coap://192.168.0.100:8000
+```
+The message shows that the server is listening at ```coap://192.168.0.100:8000```.
+
+## ESP8266 Howto
+
+The server is listening at ```coap://192.168.0.100:8000``` to accept CoAP requests. Use NodeMCU and Lua to send message.
+
+```
+-- Configure the ESP as a station (client)
+wifi.setmode(wifi.STATION)  
+wifi.sta.config("<SSID>", "<PASSWORD>")  
+wifi.sta.autoconnect(1)
+
+-- Create a CoAP client
+cc = coap.Client()
+
+-- Make a POST request
+uri="coap://127.0.0.1:8000/object/12345678/send"
+
+tmr.alarm(0, 1000, 1, function() 
+    cc:post(uri, "{\"temp\":20}\r\n")
+end)
+```
+
+## URI Style
+
+```
+coap://127.0.0.1:8000/object/<ObjectID>/send
+```
+
+* *object* is the resource name
+* *<ObjectID>* is the unique ID of the resource. Please assign a string for your device.
+* *send* is the action which means "sending data to the server*
