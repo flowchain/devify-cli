@@ -25,6 +25,9 @@
   "bin": {
     "devify": "./bin/init.js"
   },
+  "scripts": {
+    "test": "node bin/init.js mytest && rm -rf mytest"
+  },
   "dependencies": {
     "chalk": "^1.1.1",
     "commander": "^2.9.0",
