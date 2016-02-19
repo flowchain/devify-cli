@@ -66,5 +66,5 @@ coap://127.0.0.1:8000/object/<ObjectID>/send
 ```
 
 * *object* is the resource name
-* *<ObjectID>* is the unique ID of the resource. Please assign a string for your device.
+* *&lt;ObjectID&gt;* is the unique ID of the resource. Please assign a string for your device.
 * *send* is the action which means "sending data to the server*
