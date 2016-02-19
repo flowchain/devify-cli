@@ -3,6 +3,7 @@
 # devify-cli
 
 [![Build Status](https://travis-ci.org/DevifyPlatform/devify-cli.svg?branch=master)](https://travis-ci.org/DevifyPlatform/devify-cli)
+[![npm version](https://img.shields.io/npm/v/devify-cli.svg?style=flat)](https://www.npmjs.com/package/devify-cli)
 
 *devify* is an IoT server boilerplate. It is extremely light weight and simple to use. To get to speed up, a cli tools is provided.
 
