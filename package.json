@@ -1,6 +1,6 @@
 {
   "name": "devify-cli",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "A cli for for getting started with devify",
   "main": "index.js",
   "engines": {
@@ -31,8 +31,12 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "commander": "^2.9.0",
+    "connect": "^3.4.1",
     "elegant-spinner": "^1.0.1",
+    "http": "0.0.0",
     "log-update": "^1.0.2",
+    "path": "^0.12.7",
+    "serve-static": "^1.10.2",
     "shelljs": "^0.6.0"
   },
   "devDependencies": {}
