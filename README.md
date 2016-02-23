@@ -68,3 +68,7 @@ coap://127.0.0.1:8000/object/<ObjectID>/send
 * *object* is the resource name
 * *&lt;ObjectID&gt;* is the unique ID of the resource. Please assign a string for your device.
 * *send* is the action which means "sending data to the server*
+
+## Docs
+
+* Connect IoT device to local host, https://wotcity.com/blog/2016/02/23/connect-iot-device-to-local-host/
