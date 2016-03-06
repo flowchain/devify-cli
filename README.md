@@ -7,6 +7,24 @@
 
 *devify* is an IoT server boilerplate. It is extremely light weight and simple to use. To get to speed up, a cli tools is provided.
 
+## Usage
+
+```
+  Usage: devify [options] [command]
+
+
+  Commands:
+
+    new <dir>    Create a new devify-server project in the directory
+    ui <name>    Install one ui package
+    serve <dir>  Start ui package server
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+```
+
 ## Quickstart
 
 *devify-cli* is a cli tool for getting started with [devify](https://github.com/DevifyPlatform/devify-server)
@@ -14,14 +32,14 @@
 npm install -g devify-cli
 ```
 
-Create a new project
+Create a new project with ```new``` command
 ```
-devify my_project
+devify new esp8266-iot
 ```
 
 Install dependencies
 ```
-cd my_project && npm install
+cd esp8266-iot && npm install
 ```
 
 Start the server
