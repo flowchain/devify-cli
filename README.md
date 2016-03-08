@@ -56,9 +56,17 @@ WoT.City/CoAP server is listening at coap://192.168.0.100:8000
 ```
 The message shows that the server is listening at ```coap://192.168.0.100:8000```.
 
-## Upgrade Project
+## Update Project
 
-Devify project is developing and will be continous integrated into [devify-server](https://github.com/DevifyPlatform/devify-server). All the changes will be in ```libs```. Please use git to sync your project with devify-server master branch. Just upgrade the ```libs/``` folder of your own project by the following commands.
+Devify project is developing and will be continous integrated into [devify-server](https://github.com/DevifyPlatform/devify-server). You can update your project library code with ```update``` command.
+
+```
+$ devify <your_dir>
+```
+
+## Manually
+
+If you would likt to update your project by ```git``` manually. You can just upgrade the ```libs/``` folder of your own project by the following commands.
 
 ```
 $ cd <your-dir>
@@ -67,6 +75,8 @@ $ git fetch devify
 $ git checkout devify/master libs
 $ git remote remove devify
 ```
+
+Since all the changes of upstream will only be in ```libs```, you can just checkout ```libs/``` from upstream master.
 
 ## ESP8266 Howto
 
