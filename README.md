@@ -15,13 +15,15 @@
 
   Commands:
 
-    new <dir>    Create a new devify-server project in the directory
-    ui <name>    Install one ui package
-    serve <dir>  Start ui package server
+    new <dir>     Create a new devify-server project in the directory
+    update <dir>  Update your project libraries
+    ui <name>     Install one ui package
+    serve <dir>   Start ui package server
 
   Options:
 
     -h, --help     output usage information
+    -V, --version  output the version number
     -V, --version  output the version number
 ```
 
