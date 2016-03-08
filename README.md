@@ -56,6 +56,18 @@ WoT.City/CoAP server is listening at coap://192.168.0.100:8000
 ```
 The message shows that the server is listening at ```coap://192.168.0.100:8000```.
 
+## Upgrade Project
+
+Devify project is developing and will be continous integrated into [devify-server](https://github.com/DevifyPlatform/devify-server). All the changes will be in ```libs```. Please use git to sync your project with devify-server master branch. Just upgrade the ```libs/``` folder of your own project by the following commands.
+
+```
+$ cd <your-dir>
+$ git remote add devify https://github.com/DevifyPlatform/devify-server
+$ git fetch devify
+$ git checkout devify/master libs
+$ git remote remove devify
+```
+
 ## ESP8266 Howto
 
 The server is listening at ```coap://192.168.0.100:8000``` to accept CoAP requests. Use NodeMCU and Lua to send message.
