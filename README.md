@@ -63,7 +63,7 @@ The message shows that the server is listening at ```coap://192.168.0.100:8000``
 Devify project is developing and will be continous integrated into [devify-server](https://github.com/DevifyPlatform/devify-server). You can update your project library code with ```update``` command.
 
 ```
-$ devify <your_dir>
+$ devify update <your_dir>
 ```
 
 ### Update Manually
