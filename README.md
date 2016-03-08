@@ -66,9 +66,9 @@ Devify project is developing and will be continous integrated into [devify-serve
 $ devify <your_dir>
 ```
 
-## Manually
+### Uupdate Manually
 
-If you would likt to update your project by ```git``` manually. You can just upgrade the ```libs/``` folder of your own project by the following commands.
+If you would like to update your project by ```git``` manually. You can just upgrade the ```libs/``` folder of your own project by the following commands.
 
 ```
 $ cd <your-dir>
