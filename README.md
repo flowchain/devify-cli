@@ -46,14 +46,14 @@ cd esp8266-iot && npm install
 
 Start the server
 ```
-node esp8266-coap-server.js
+node coap-broker-server-events.js
 ```
 
 By default, the IoT server is listening at ```coap://localhost:8000``` to accept CoAP requests. Please use an IP address to listen from requests. Use ```HOST``` environment to achieve this.
 
 ```
 $ export HOST=192.168.0.100
-$ node esp8266-coap-server.js 
+$ node coap-broker-server-events.js
 WoT.City/CoAP server is listening at coap://192.168.0.100:8000
 ```
 The message shows that the server is listening at ```coap://192.168.0.100:8000```.
